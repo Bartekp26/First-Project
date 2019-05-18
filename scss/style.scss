@@ -1,4 +1,7 @@
+
 $textColor: #fff;
+$firstColor: rgb(81, 196, 66);
+$secondColor: rgb(82, 168, 70);
 $hoverColor: #ddd;
 
 body{
@@ -15,7 +18,7 @@ body{
     transition: .7s;
     
     .logo{
-        color: $textColor;
+        color: $secondColor;
         font-size: 2.2em;
         letter-spacing: 0.1em;
         font-family: 'Ubuntu', sans-serif;
@@ -41,12 +44,40 @@ body{
     }
     &.black {
         background-color: rgba(1, 1, 1, .6);
+        .logo{
+            color: $firstColor;
+        }
     }
 }
 
-main{
-    height: 150vh;
-    width: 100%;
-    background-image: url("../img/background.jpg");
-    background-repeat: no-repeat;
+section{
+    &.one{
+        height: 100vh;
+        width: 100%;
+        background-image: url("../img/background.jpg");
+        background-repeat: no-repeat;
+        div.darkerBackground{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        div.title{
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            margin: 30vh 0 70vh 0;
+            font-family: 'Ubuntu', sans-serif;
+            h3{
+                font-size: 35px;
+                color: $secondColor;
+            }
+            h1{
+                font-size: 50px;
+                font-weight: bold;
+                color: $firstColor;
+            }
+        }
+    }
 }
+
+

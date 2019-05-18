@@ -10,7 +10,7 @@ body {
   width: 100%;
   transition: .7s; }
   .navbar .logo {
-    color: #fff;
+    color: #52a846;
     font-size: 2.2em;
     letter-spacing: 0.1em;
     font-family: 'Ubuntu', sans-serif; }
@@ -27,9 +27,28 @@ body {
       color: #ddd; }
   .navbar.black {
     background-color: rgba(1, 1, 1, 0.6); }
+    .navbar.black .logo {
+      color: #51c442; }
 
-main {
-  height: 150vh;
+section.one {
+  height: 100vh;
   width: 100%;
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat; }
+  section.one div.darkerBackground {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); }
+  section.one div.title {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin: 30vh 0 70vh 0;
+    font-family: 'Ubuntu', sans-serif; }
+    section.one div.title h3 {
+      font-size: 35px;
+      color: #52a846; }
+    section.one div.title h1 {
+      font-size: 50px;
+      font-weight: bold;
+      color: #51c442; }
