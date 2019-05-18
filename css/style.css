@@ -1,2 +1,35 @@
 body {
-  background-color: aliceblue; }
+  background-color: white;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  transition: .7s; }
+  .navbar .logo {
+    color: #fff;
+    font-size: 2.2em;
+    letter-spacing: 0.1em;
+    font-family: 'Ubuntu', sans-serif; }
+    .navbar .logo:hover {
+      color: #ddd; }
+  .navbar .nav-item.active {
+    background-color: #888;
+    border-radius: 30px; }
+  .navbar .nav-item .nav-link {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 0.2em 1.2em 0.2em 1.2em; }
+    .navbar .nav-item .nav-link:hover {
+      color: #ddd; }
+  .navbar.black {
+    background-color: rgba(1, 1, 1, 0.6); }
+
+main {
+  height: 150vh;
+  width: 100%;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat; }

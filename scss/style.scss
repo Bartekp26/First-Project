@@ -1,3 +1,52 @@
+$textColor: #fff;
+$hoverColor: #ddd;
+
 body{
-    background-color: aliceblue;
+    background-color: white;
+    color: $textColor;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    transition: .7s;
+    
+    .logo{
+        color: $textColor;
+        font-size: 2.2em;
+        letter-spacing: 0.1em;
+        font-family: 'Ubuntu', sans-serif;
+    
+        &:hover{
+            color: $hoverColor;
+        }
+    }
+    .nav-item{
+        &.active{
+            background-color: #888;
+            border-radius: 30px;
+        }
+        .nav-link{
+            color: $textColor;
+            font-size: 1.1em;
+            padding: 0.2em 1.2em 0.2em 1.2em;
+        
+            &:hover{
+                color: $hoverColor;
+            }
+        }
+    }
+    &.black {
+        background-color: rgba(1, 1, 1, .6);
+    }
+}
+
+main{
+    height: 150vh;
+    width: 100%;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
 }
