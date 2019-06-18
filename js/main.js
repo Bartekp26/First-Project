@@ -9,10 +9,10 @@ for (let i = 0; i < links.length; i++) {
 }
 
 window.addEventListener('scroll', function(){
-    if(window.scrollY != 0){
+    if(window.scrollY > 100){
         document.querySelector('.navbar').classList.add('black');
+        document.querySelector('.navbar-collapse').classList.remove('show');
     } else {
         document.querySelector('.navbar').classList.remove('black');
     }
-
 }, false);

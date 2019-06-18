@@ -1,31 +1,45 @@
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 
-$textColor: #fff;
 $firstColor: rgb(81, 196, 66);
 $secondColor: rgb(82, 168, 70);
 $hoverColor: #ddd;
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: white;
-    color: $textColor;
+    color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+*::selection{
+    color: white;
+    background-color: $secondColor;
+}
+
 .navbar{
     position: fixed;
     width: 100%;
-    transition: .7s;
+    z-index: 10;
     
     .logo{
         color: $secondColor;
-        font-size: 2.2em;
+        font-size: 2em;
         letter-spacing: 0.1em;
         font-family: 'Ubuntu', sans-serif;
-    
-        &:hover{
-            color: $hoverColor;
+        img{
+            padding-right: 15px;
+            width: 20%;
         }
+    }
+    div#menu{
+        transition: 1s;
     }
     .nav-item{
         &.active{
@@ -33,17 +47,16 @@ body{
             border-radius: 30px;
         }
         .nav-link{
-            color: $textColor;
+            color: #fff;
             font-size: 1.1em;
             padding: 0.2em 1.2em 0.2em 1.2em;
-        
             &:hover{
                 color: $hoverColor;
             }
         }
     }
     &.black {
-        background-color: rgba(1, 1, 1, .6);
+        background-color: rgba(1, 1, 1, 0.6);
         .logo{
             color: $firstColor;
         }
@@ -51,7 +64,14 @@ body{
 }
 
 section{
-    &.one{
+    h1{
+        font-weight: bold;
+        font-size: 4em;
+        text-align: center;
+        padding: 70px;
+    }
+    
+    &#one{
         height: 100vh;
         width: 100%;
         background-image: url("../img/background.jpg");
@@ -68,16 +88,39 @@ section{
             margin: 30vh 0 70vh 0;
             font-family: 'Ubuntu', sans-serif;
             h3{
-                font-size: 35px;
+                font-size: 2.5em;
                 color: $secondColor;
             }
             h1{
-                font-size: 50px;
+                font-size: 4em;
                 font-weight: bold;
                 color: $firstColor;
+                padding: 30px;
+            }
+        }
+        a.icon{
+            position: absolute;
+            left: 50%;
+            bottom: 5%;
+            font-size: 2em;
+            color: white;
+            transition: transform .4s ease-in-out;
+
+            &:hover{
+                transform: scale(1.20) translateY(0.3em);
             }
         }
     }
-}
 
+    &#two{
+        
+        height: 100vh;
+        background-color: #fff;
+        .title{
+            color: #000;
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+    }
+}
 
