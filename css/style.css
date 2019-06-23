@@ -4391,14 +4391,10 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  color: #fff;
+  color: #000;
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 0; }
-
-*::selection {
-  color: white;
-  background-color: #52a846; }
 
 .navbar {
   position: fixed;
@@ -4468,14 +4464,16 @@ section#one {
       transform: scale(1.2) translateY(0.3em); }
 
 section#two {
-  height: 100vh;
-  background-color: #fff; }
+  background-color: #e8ffdd; }
   section#two .title {
     color: #000;
     font-family: 'Ubuntu', sans-serif; }
-
-.box {
-  width: 150px;
-  height: 150px;
-  background-color: red;
-  margin: 0; }
+  section#two img {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px; }
+  section#two figcaption {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px; }
