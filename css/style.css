@@ -4542,3 +4542,11 @@ section h1 {
       flex-direction: row; }
       #three .social-media .social-icon {
         padding: 30px 100px; } }
+
+footer {
+  background-color: #192b3d;
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+  letter-spacing: 3px; }

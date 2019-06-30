@@ -5,7 +5,6 @@
 
 $firstColor: rgb(81, 196, 66);
 $secondColor: rgb(82, 168, 70);
-$hoverColor: #ddd;
 
 html{
     scroll-behavior: smooth;
@@ -46,7 +45,7 @@ body{
             font-size: 1.1em;
             padding: 0.2em 1.2em 0.2em 1.2em;
             &:hover{
-                color: $hoverColor;
+                color: #ddd;
             }
         }
     }
@@ -99,7 +98,6 @@ section h1{
         font-size: 2em;
         color: white;
         transition: transform .4s ease-in-out;
-
         &:hover{
             transform: scale(1.20) translateY(0.3em);
         }
@@ -154,7 +152,6 @@ section h1{
             font-size: 3em;
             padding: 40px;
         }
-
         input[type=email],
         textarea{
             display: block;
@@ -184,8 +181,7 @@ section h1{
             font-size: 7em;
             transition: transform .5s ease-in-out;
             color: #192b3d;
-            padding: 30px;
-                
+            padding: 30px;                
             i.fab{
                 transition: transform .5s ease-in-out;
                 &:hover{
@@ -200,7 +196,6 @@ section h1{
             border-bottom: 7px dotted #192b3d;
             padding-bottom: 60px;
         }
-
         .social-media {
             flex-direction: row;
 
@@ -209,5 +204,15 @@ section h1{
             }
         }
     }
+}
+
+
+footer{
+    background-color: #192b3d;
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 3px;
 }
         
