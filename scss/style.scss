@@ -58,73 +58,156 @@ body{
     }
 }
 
-section{
-    h1{
-        font-weight: bold;
-        font-size: 4em;
-        text-align: center;
-        padding: 70px;
-    }
+section h1{
+    font-weight: bold;
+    font-size: 4em;
+    text-align: center;
+    padding: 70px;
+}
     
-    &#one{
-        height: 100vh;
+#one{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/backgrounds/background.jpg");
+    background-repeat: no-repeat;
+    div.darkerBackground{
         width: 100%;
-        background-image: url("../img/background.jpg");
-        background-repeat: no-repeat;
-        div.darkerBackground{
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    div.title{
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        margin: 30vh 0 70vh 0;
+        font-family: 'Ubuntu', sans-serif;
+        h3{
+            font-size: 2.5em;
+            color: $secondColor;
         }
-        div.title{
-            position: absolute;
-            text-align: center;
-            width: 100%;
-            margin: 30vh 0 70vh 0;
-            font-family: 'Ubuntu', sans-serif;
-            h3{
-                font-size: 2.5em;
-                color: $secondColor;
-            }
-            h1{
-                font-size: 4em;
-                font-weight: bold;
-                color: $firstColor;
-                padding: 30px;
-            }
-        }
-        a.icon{
-            position: absolute;
-            left: 50%;
-            bottom: 5%;
-            font-size: 2em;
-            color: white;
-            transition: transform .4s ease-in-out;
-
-            &:hover{
-                transform: scale(1.20) translateY(0.3em);
-            }
+        h1{
+            font-size: 4em;
+            font-weight: bold;
+            color: $firstColor;
+            padding: 30px;
         }
     }
+    a.icon{
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        font-size: 2em;
+        color: white;
+        transition: transform .4s ease-in-out;
 
-    &#two{
-        
-        background-color: rgb(232, 255, 221);
-        .title{
-            color: #000;
-            font-family: 'Ubuntu', sans-serif;
+        &:hover{
+            transform: scale(1.20) translateY(0.3em);
         }
-        img{
-            width: 100%;
-            height: 100%;
-            padding: 0 15px;
-        }
-        figcaption{
-            text-align: center;
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-    }   
+    }
 }
 
+#two{
+    background-color: lightgray;
+    padding-bottom: 20px;
+    .title{
+        color: #000;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        padding: 0 15px;
+        transition: transform .5s ease-in-out;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    figcaption{
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 15px 0 30px 0;
+    }
+    .showMore{
+        text-align: center;
+        margin: 0 auto;
+        padding: 15px;
+        background-color: #192b3d;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        width: 200px;
+        border-radius: 30px;
+        cursor: pointer;
+    }   
+}  
+
+#three{
+    background-image: url("../img/backgrounds/contact.png");
+
+    .email-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: 7px dotted #192b3d;
+        h1{
+            font-size: 3em;
+            padding: 40px;
+        }
+
+        input[type=email],
+        textarea{
+            display: block;
+            padding: 5px;
+            margin: 20px;
+        }
+        input[type=submit]{
+            background-color: #192b3d;
+            padding: 10px 25px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            border: 2px solid #3b4d5f;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    
+    .social-media{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 50px;
+        .social-icon {
+            font-size: 7em;
+            transition: transform .5s ease-in-out;
+            color: #192b3d;
+            padding: 30px;
+                
+            i.fab{
+                transition: transform .5s ease-in-out;
+                &:hover{
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .email-form {
+            border-right: 0;
+            border-bottom: 7px dotted #192b3d;
+            padding-bottom: 60px;
+        }
+
+        .social-media {
+            flex-direction: row;
+
+            .social-icon {
+                padding: 30px 100px;
+            }
+        }
+    }
+}
+        

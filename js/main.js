@@ -8,6 +8,7 @@ for (let i = 0; i < links.length; i++) {
     }, false);
 }
 
+
 window.addEventListener('scroll', function(){
     if(window.scrollY > 100){
         document.querySelector('.navbar').classList.add('black');
@@ -16,3 +17,31 @@ window.addEventListener('scroll', function(){
         document.querySelector('.navbar').classList.remove('black');
     }
 }, false);
+
+
+let showMoreButton = document.querySelector('div.showMore');
+const noneElements = document.querySelectorAll('div.d-none');
+
+
+function showMore(e){
+    const target = e.target;
+    
+    if(showMoreButton.textContent == "Show more"){
+        for(let i = 0; i < noneElements.length; i++){
+
+            noneElements[i].classList.remove('d-none', 'd-lg-none');
+
+            target.textContent = "Show less"; 
+        }     
+    } else if(showMoreButton.textContent == "Show less"){
+        for (let i = 0; i < noneElements.length; i++) {
+            
+            noneElements[i].classList.add('d-none', 'd-lg-none');
+
+            target.textContent = "Show more";
+        }
+    } 
+}
+
+
+showMoreButton.addEventListener('click', showMore, false);

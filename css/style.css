@@ -4430,50 +4430,115 @@ section h1 {
   text-align: center;
   padding: 70px; }
 
-section#one {
+#one {
   height: 100vh;
   width: 100%;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/backgrounds/background.jpg");
   background-repeat: no-repeat; }
-  section#one div.darkerBackground {
+  #one div.darkerBackground {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); }
-  section#one div.title {
+  #one div.title {
     position: absolute;
     text-align: center;
     width: 100%;
     margin: 30vh 0 70vh 0;
     font-family: 'Ubuntu', sans-serif; }
-    section#one div.title h3 {
+    #one div.title h3 {
       font-size: 2.5em;
       color: #52a846; }
-    section#one div.title h1 {
+    #one div.title h1 {
       font-size: 4em;
       font-weight: bold;
       color: #51c442;
       padding: 30px; }
-  section#one a.icon {
+  #one a.icon {
     position: absolute;
     left: 50%;
     bottom: 5%;
     font-size: 2em;
     color: white;
     transition: transform .4s ease-in-out; }
-    section#one a.icon:hover {
+    #one a.icon:hover {
       transform: scale(1.2) translateY(0.3em); }
 
-section#two {
-  background-color: #e8ffdd; }
-  section#two .title {
+#two {
+  background-color: lightgray;
+  padding-bottom: 20px; }
+  #two .title {
     color: #000;
     font-family: 'Ubuntu', sans-serif; }
-  section#two img {
+  #two img {
     width: 100%;
     height: 100%;
-    padding: 0 15px; }
-  section#two figcaption {
+    padding: 0 15px;
+    transition: transform .5s ease-in-out; }
+    #two img:hover {
+      transform: scale(1.05); }
+  #two figcaption {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-    margin-top: 10px; }
+    margin: 15px 0 30px 0; }
+  #two .showMore {
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #192b3d;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 200px;
+    border-radius: 30px;
+    cursor: pointer; }
+
+#three {
+  background-image: url("../img/backgrounds/contact.png"); }
+  #three .email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 7px dotted #192b3d; }
+    #three .email-form h1 {
+      font-size: 3em;
+      padding: 40px; }
+    #three .email-form input[type=email],
+    #three .email-form textarea {
+      display: block;
+      padding: 5px;
+      margin: 20px; }
+    #three .email-form input[type=submit] {
+      background-color: #192b3d;
+      padding: 10px 25px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      border: 2px solid #3b4d5f;
+      margin: 0 auto;
+      display: block; }
+  #three .social-media {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px; }
+    #three .social-media .social-icon {
+      font-size: 7em;
+      transition: transform .5s ease-in-out;
+      color: #192b3d;
+      padding: 30px; }
+      #three .social-media .social-icon i.fab {
+        transition: transform .5s ease-in-out; }
+        #three .social-media .social-icon i.fab:hover {
+          transform: scale(1.15); }
+  @media screen and (max-width: 991px) {
+    #three .email-form {
+      border-right: 0;
+      border-bottom: 7px dotted #192b3d;
+      padding-bottom: 60px; }
+    #three .social-media {
+      flex-direction: row; }
+      #three .social-media .social-icon {
+        padding: 30px 100px; } }
