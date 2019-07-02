@@ -45,3 +45,7 @@ function showMore(e){
 
 
 showMoreButton.addEventListener('click', showMore, false);
+
+
+
+var lightbox1 = $('.gallery a').simpleLightbox();

@@ -3,6 +3,8 @@
 @import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 
+@import "../node_modules/simplelightbox/dist/simplelightbox.scss";
+
 $firstColor: rgb(81, 196, 66);
 $secondColor: rgb(82, 168, 70);
 
@@ -115,7 +117,7 @@ section h1{
         width: 100%;
         height: 100%;
         padding: 0 15px;
-        transition: transform .5s ease-in-out;
+        transition: transform .3s ease-in-out;
         &:hover{
             transform: scale(1.05);
         }
@@ -137,6 +139,9 @@ section h1{
         width: 200px;
         border-radius: 30px;
         cursor: pointer;
+        &:hover{
+            background-color: #2a3c4e;
+        }
     }   
 }  
 
