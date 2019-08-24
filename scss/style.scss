@@ -107,7 +107,7 @@ section h1{
 }
 
 #two{
-    background-color: lightgray;
+    background: linear-gradient(0.1turn, rgba(168, 255, 187, 0.2), lighten($firstColor, 20%));
     padding-bottom: 20px;
     .title{
         color: #000;
@@ -162,6 +162,7 @@ section h1{
             display: block;
             padding: 5px;
             margin: 20px;
+            resize: none;
         }
         input[type=submit]{
             background-color: #192b3d;

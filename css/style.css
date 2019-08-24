@@ -4685,7 +4685,7 @@ section h1 {
       transform: scale(1.2) translateY(0.3em); }
 
 #two {
-  background-color: lightgray;
+  background: linear-gradient(0.1turn, rgba(168, 255, 187, 0.2), #99dc90);
   padding-bottom: 20px; }
   #two .title {
     color: #000;
@@ -4730,7 +4730,8 @@ section h1 {
     #three .email-form textarea {
       display: block;
       padding: 5px;
-      margin: 20px; }
+      margin: 20px;
+      resize: none; }
     #three .email-form input[type=submit] {
       background-color: #192b3d;
       padding: 10px 25px;
